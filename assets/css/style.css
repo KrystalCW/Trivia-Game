@@ -1,0 +1,69 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+}
+
+#trivia-picture {
+    max-height: 300px;
+    max-width: 200px;
+    /* max-width: 100%; */
+}
+
+/* .container {
+    margin: 0 auto;
+} */
+
+.card {
+    background-color: #C2002F;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #fdf1a6;
+}
+
+#main-content {
+    vertical-align: middle;
+    border-color: #e6aa30;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#fixed-box {
+    height: 500px;
+}
+
+#radio:hover {
+    
+}
+
+#questions {
+    text-align: left;
+    padding: 10px;
+}
+
+#options {
+    margin-left: 10px;
+}
+
+#answerA, #answerB, #answerC, #answerD {
+    margin-left: 10px;
+}
+
+#trivia-question {
+    margin-bottom: 10px;
+}
+
+h1 {
+    align-content: center;
+    text-align: center;
+    color: #fdf1a6;
+    padding: 20px;
+}
+
+/* color: #e9bb3c;
+
+color: #e6aa30; */
