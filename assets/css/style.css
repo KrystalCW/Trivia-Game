@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 } */
 
-.card {
+#winsLosses, #time-remaining {
     background-color: #C2002F;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -34,6 +34,7 @@ body {
 
 #fixed-box {
     height: 500px;
+    
 }
 
 #radio:hover {
@@ -41,12 +42,16 @@ body {
 }
 
 #questions {
-    text-align: left;
-    padding: 10px;
+    padding: 20px;
+    background-image: url("../images/questions-background.png");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #options {
     margin-left: 10px;
+    text-align: left;
 }
 
 #answerA, #answerB, #answerC, #answerD {
@@ -54,7 +59,9 @@ body {
 }
 
 #trivia-question {
+    text-align: center;
     margin-bottom: 10px;
+    margin-top: 60px;
 }
 
 h1 {
@@ -62,6 +69,10 @@ h1 {
     text-align: center;
     color: #fdf1a6;
     padding: 20px;
+}
+
+#picture {
+    align-content: center;
 }
 
 /* color: #e9bb3c;

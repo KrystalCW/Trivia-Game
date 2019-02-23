@@ -36,6 +36,42 @@ var triviaQuestions = [
     },
     correctAnswer: "C",
     },
+    {question: "What is the name of Dumbledore's phoenix?",
+    answers: {
+        A: "Hedwig",
+        B: "Pigwidgeon",
+        C: "Crookshanks",
+        D: "Fawkes",
+    },
+    correctAnswer: "D",
+    },
+    {question: "What is Hermione's patronus?",
+    answers: {
+        A: "a beaver",
+        B: "Jack Russell terrier",
+        C: "a stag",
+        D: "an otter",
+    },
+    correctAnswer: "D",
+    },
+    {question: "What is the name of Ron's second eldest brother?",
+    answers: {
+        A: "Charlie",
+        B: "Bill",
+        C: "Percy",
+        D: "Fred. Or is it George?",
+    },
+    correctAnswer: "B",
+    },
+    {question: "What is the organization Hermione forms in Goblet of Fire after feeling sorry for house elves?",
+    answers: {
+        A: "S.P.E.W. : the Society for the Promotion of Elvish Welfare",
+        B: "W.E.L.P. : the Welfare of Elves Lacks Protection",
+        C: "M.E.E.P. : Muggles Empowering Elves for Promotion (beyond basic household duties)",
+        D: "P.E.W.S. : the Promotion of Elvish Welfare in Society",
+    },
+    correctAnswer: "A",
+    },
 ];
 
 function startGame() {
@@ -84,10 +120,10 @@ $('input[type=radio]').click(function(){
 function winImage() {
     document.getElementById("trivia-pic").src=images[0];
     $("#trivia-pic").append("<div>Correct!</div>");
-    if (count <= 2) {
-        setTimeout(nextQuestion, 2000);
+    if (count <= 6) {
+        setTimeout(nextQuestion, 5000);
     } else {
-        setTimeout(gameOver, 2000);
+        setTimeout(gameOver, 5000);
     }
     userSelection = null;
     timerRunning = false;
@@ -96,10 +132,10 @@ function winImage() {
 
 function lossImage() {
     document.getElementById("trivia-pic").src=images[1];
-    if (count <= 2) {
-        setTimeout(nextQuestion, 2000);
+    if (count <= 6) {
+        setTimeout(nextQuestion, 5000);
     } else {
-        setTimeout(gameOver, 2000);
+        setTimeout(gameOver, 5000);
     }
     userSelection = null;
     timerRunning = false;
@@ -108,10 +144,10 @@ function lossImage() {
 
 function timeOut() {
     document.getElementById("trivia-pic").src=images[2];
-    if (count <= 2) {
-        setTimeout(nextQuestion, 2000);
+    if (count <= 6) {
+        setTimeout(nextQuestion, 5000);
     } else {
-        setTimeout(gameOver, 2000);
+        setTimeout(gameOver, 5000);
     }
     userSelection = null;
     timerRunning = false;
